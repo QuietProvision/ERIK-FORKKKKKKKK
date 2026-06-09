@@ -5,6 +5,7 @@ int main(void)
 {
     int x = 5;
     printf("Hello, world!\n");
+    printf("C is sooo fun");
     printf("x is = %d\n", x);
 
     int *array = malloc(sizeof(int) * 20);
