@@ -7,6 +7,7 @@ int main(void)
     printf("Hello, world!\n");
     printf("C is sooo fun");
     printf("x is = %d\n", x);
+    printf("Hi. This is modified code for the repository!");
 
     int *array = malloc(sizeof(int) * 20);
     if (array == NULL) {
