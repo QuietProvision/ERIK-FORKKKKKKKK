@@ -8,7 +8,7 @@ int main(void)
     printf("C is sooo fun");
     printf("x is = %d\n", x);
     printf("Hi. This is modified code for the repository!");
-
+    printf("This is a random line of text!");
     int *array = malloc(sizeof(int) * 20);
     if (array == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
