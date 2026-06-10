@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+int add();
 int main(void)
 {
     int x = 5;
@@ -28,7 +29,10 @@ int main(void)
         printf("%d ", array[i]);
     }
     printf("\n");
-
+    printf("%d\n", add(5,10));
     free(array);
     return 0;
+}
+int add(int a, int b){
+return a+b;
 }
