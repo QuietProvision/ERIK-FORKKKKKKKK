@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 int main(void)
 {
@@ -9,14 +10,17 @@ int main(void)
     printf("x is = %d\n", x);
     printf("Hi. This is modified code for the repository!");
     printf("This is a random line of text!");
+    
     int *array = malloc(sizeof(int) * 20);
     if (array == NULL) {
         fprintf(stderr, "Memory allocation failed\n");
         return 1;
     }
 
+    /* seed RNG and fill array with random ints from 100 to 200 inclusive */
+    srand((unsigned)time(NULL));
     for (int i = 0; i < 20; i++) {
-        array[i] = i + 1;
+        array[i] = rand() % 101 + 100; /* rand()%range + min; range = 200-100 =100, +1 =>101 */
     }
 
     printf("First 20 integers allocated with malloc:\n");
