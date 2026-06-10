@@ -7,10 +7,10 @@ int main(void)
 {
     int x = 5;
     printf("Hello, world!\n");
-    printf("C is sooo fun");
+    printf("C is sooo fun\n");
     printf("x is = %d\n", x);
-    printf("Hi. This is modified code for the repository!");
-    printf("This is a random line of text!");
+    printf("Hi. This is modified code for the repository!\n");
+    printf("This is a random line of text!\n");
     
     int *array = malloc(sizeof(int) * 20);
     if (array == NULL) {
