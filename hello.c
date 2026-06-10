@@ -26,9 +26,9 @@ int main(void)
 
     printf("First 20 integers allocated with malloc:\n");
     for (int i = 0; i < 20; i++) {
-        printf("%d ", array[i]);
+        printf("%d\n ", array[i]);
     }
-    printf("\n");
+    
     printf("%d\n", add(5,10));
     free(array);
     return 0;
