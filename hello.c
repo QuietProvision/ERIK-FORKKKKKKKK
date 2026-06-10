@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
+
+struct person {
+    char name[50];
+    int age;
+};
 
 int add();
 int main(void)
@@ -30,6 +36,12 @@ int main(void)
     }
     
     printf("%d\n", add(5,10));
+
+    struct person Sue;
+    strcpy(Sue.name, "Sue");
+    Sue.age = 20;
+    printf("Person: %s, Age: %d\n", Sue.name, Sue.age);
+
     free(array);
     return 0;
 }
